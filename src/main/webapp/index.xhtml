@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<f:view>
+
+	<h:head>
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf8" />
+
+	</h:head>
+
+	<h:body>
+
+
+		<p:panelGrid columns="1" style="margin: 0 auto">
+			<h1>Spring Boot Weblogic JSF</h1>
+			<p:panelGrid columns="4" style="margin: 0 auto">
+				<h1>Basics</h1>
+				<p:panelGrid class="panel-primary" columns="1">
+					<p:link outcome="basics/basics.jsf" value="basics/basics.jsf" />
+				</p:panelGrid>
+			
+			   	<h1>Slider</h1>
+				<p:panelGrid class="panel-primary" columns="1">
+					<p:link outcome="numberinput/sliders-1.jsf"
+						value="numberinput/sliders-1.jsf" />
+					<p:link outcome="numberinput/sliders-2.jsf"
+						value="numberinput/sliders-2.jsf" />
+				</p:panelGrid>
+			
+			
+				<h1>Date</h1>
+				<p:panelGrid class="panel-primary" columns="1">
+					<p:link outcome="dateinput/date-input-1.jsf"
+						value="dateinput/date-input-1.jsf" />
+					<p:link outcome="dateinput/date-input-2.jsf"
+						value="dateinput/date-input-2.jsf" />
+				</p:panelGrid>
+				
+				<h1>DataTable</h1>
+				<p:panelGrid  columns="1">
+					<p:link outcome="data/datatable/lazy.jsf"
+						value="data/datatable/lazy.jsf" />
+				</p:panelGrid>
+				
+                <h1>DataEdit</h1>
+				<p:panelGrid  columns="1">
+					<p:link outcome="data/datatable/lazy_with_row_edit.jsf"
+						value="data/datatable/lazy_with_row_edit.jsf" />
+				</p:panelGrid>
+			
+
+
+				<h1>Core One</h1>
+				<p:panelGrid columns="3">
+					<p:link outcome="AjaxCore/basic.jsf" value="AjaxCore/basic.jsf" />
+					<p:link outcome="AjaxCore/listener.jsf"
+						value="AjaxCore/listener.jsf" />
+					<p:link outcome="AjaxCore/process.jsf" value="AjaxCore/process.jsf" />
+					<p:link outcome="AjaxCore/dropdown.jsf"
+						value="AjaxCore/dropdown.jsf" />
+					<p:link outcome="AjaxCore/selector.jsf"
+						value="AjaxCore/selector.jsf" />
+					<p:link outcome="AjaxCore/poll.jsf" value="AjaxCore/poll.jsf" />
+					<p:link outcome="AjaxCore/status.jsf" value="AjaxCore/status.jsf" />
+					<p:link outcome="AjaxCore/event.jsf" value="AjaxCore/event.jsf" />
+					<p:link outcome="AjaxCore/counter.jsf" value="AjaxCore/counter.jsf" />
+				</p:panelGrid>
+
+                <h1>Core Two</h1>
+				<p:panelGrid columns="2">
+					<p:link outcome="AjaxCore/validation.jsf"
+						value="AjaxCore/validation.jsf" />
+					<p:link outcome="AjaxCore/search.jsf" value="AjaxCore/search.jsf" />
+					<p:link outcome="AjaxCore/fragment.jsf"
+						value="AjaxCore/fragment.jsf" />
+					<p:link outcome="AjaxCore/remoteCommand.jsf"
+						value="AjaxCore/remoteCommand.jsf" />
+				</p:panelGrid>
+                
+
+				<h1>Input</h1>
+				<p:panelGrid columns="1">
+					<p:link outcome="Input/autoComplete.jsf"
+						value="Input/autoComplete.jsf" />
+				</p:panelGrid>
+
+
+
+				<h1>Tabbed View</h1>
+				<p:panelGrid columns="1">
+					<p:link outcome="Panel/tabView.jsf" value="Panel/tabView.jsf" />
+				</p:panelGrid>
+
+				<h1>File</h1>
+				<p:panelGrid columns="1">
+					<p:link outcome="file/basic.xhtml" value="file/basic.xhtml" />
+				</p:panelGrid>
+
+
+			</p:panelGrid>
+		</p:panelGrid>
+
+	</h:body>
+
+</f:view>
+</html>

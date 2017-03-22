@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<f:view>
+
+    <h:head>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf8"/>
+    </h:head>
+
+    <h:body>
+        <h:form>
+            <b>Choose a Correct Number : </b>
+            <p:spinner id="spinner" value="#{basicsBean.selectedNumber}">
+                <p:ajax update="chosenNumber" process="@this"/>
+            </p:spinner>
+            <br/>
+            <br/>
+            <b>Choose a Proper Date : </b>
+            <p:calendar value="#{basicsBean.selectedDate}" mode="inline" showButtonPanel="true" pattern="dd.MM.yyyy">
+                <p:ajax event="dateSelect" update="chosenDate" process="@this"/>
+            </p:calendar>
+
+            <hr/>
+            
+            <b>Chosen proper number is : </b><p:outputLabel id="chosenNumber" value="#{basicsBean.selectedNumber}"/>
+            <br/>
+            <b>Chosen proper Date is : </b><p:outputLabel id="chosenDate" value="#{basicsBean.selectedDate}">
+               <f:convertDateTime pattern="dd.MM.yyyy HH:mm:ss"/>
+            </p:outputLabel>
+        </h:form>
+    </h:body>
+
+</f:view>
+</html>

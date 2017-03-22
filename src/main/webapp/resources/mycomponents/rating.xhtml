@@ -1,0 +1,20 @@
+<ui:component
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:cc="http://xmlns.jcp.org/jsf/composite"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+>
+    <cc:interface componentType="ratingComponent">
+        <cc:attribute name="score" type="java.lang.Integer" required="true"/>
+        <cc:attribute name="maxScore" type="java.lang.Integer" default="100"/>
+        <cc:attribute name="totalStars" type="java.lang.Integer" default="10"/>
+    </cc:interface>
+    <cc:implementation>
+        <span>
+            <ui:repeat value="#{cc.items}" var="loop">
+                <h:outputText value="X" />
+                <h:outputText value="O" />
+            </ui:repeat>
+        </span>
+    </cc:implementation>
+</ui:component>

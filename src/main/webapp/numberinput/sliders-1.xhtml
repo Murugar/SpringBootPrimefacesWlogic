@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:head><title>Proper Date Input</title></h:head>
+<h:body>
+    <h1 class="ui-widget-header ui-corner-all" align="center">Slider One</h1>
+    <br/>
+    <h:form>
+        <p:fieldset legend="Basics">
+            <p:panelGrid>
+                <h:panelGroup>
+                    &deg;F:
+                    <p:spinner min="32" max="212" value="#{fahrenheitBean.f}"/>
+                    <p:commandButton value="Convert to C" update="celcius"/>
+                    <h:outputText id="celcius" value="#{fahrenheitBean.f}&deg;F = #{fahrenheitBean.c}&deg;C"/>
+                </h:panelGroup>
+            </p:panelGrid>
+        </p:fieldset>
+    </h:form>
+</h:body>
+</html>
