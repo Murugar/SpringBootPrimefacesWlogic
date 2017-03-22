@@ -42,7 +42,7 @@ public class Application extends SpringBootServletInitializer {
     @Bean
     public ServletContextInitializer servletContextCustomizer() {
         return sc -> {
-            sc.setInitParameter(Constants.ContextParams.THEME, "afternoon");
+            sc.setInitParameter(Constants.ContextParams.THEME, "humanity");
             sc.setInitParameter(Constants.ContextParams.FONT_AWESOME, "true");
             sc.setInitParameter(ProjectStage.PROJECT_STAGE_PARAM_NAME, ProjectStage.Development.name());
         };
